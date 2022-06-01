@@ -44,9 +44,6 @@ setup(
     include_package_data=True,
     zip_safe=False,
     install_requires=[
-        "pyasn1>=0.1.9, <0.2",
-        "pyOpenSSL>=0.15.1, <0.16",
-        "cryptography>=1.2.2, <1.3",
         "passlib>=1.6.5, <1.7",
         "hpack>=2.1.0, <3.0",
         "hyperframe>=3.2.0, <4.0",
