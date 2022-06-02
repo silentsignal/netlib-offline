@@ -16,6 +16,7 @@ Basic Usage
 -----------
 
 .. code:: python
+
     from netlib.http.http1 import read_request
     from netlib.http.http1.assemble import assemble_request
     from io import BytesIO
