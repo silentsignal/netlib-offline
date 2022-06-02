@@ -20,7 +20,6 @@ Basic Usage
     from netlib.http.http1 import read_request
     from netlib.http.http1.assemble import assemble_request
     from io import BytesIO
-    import sys
 
     req = read_request(BytesIO(b"GET / HTTP/1.1\r\nHost: www.example.com\r\n\r\n"))
     req.headers["X-Foo"] = "Bar"
