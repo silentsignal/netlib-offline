@@ -12,6 +12,21 @@ fork to keep it useful for everyone, we take this "No support, no liability"
 thing especially seriously in this case, as we don't have the resources to 
 maintain a really popular project. Feature requests will likely be rejected. 
 
+Basic Usage
+-----------
+
+.. code:: python
+    from netlib.http.http1 import read_request
+    from netlib.http.http1.assemble import assemble_request
+    from io import BytesIO
+    import sys
+
+    req = read_request(BytesIO(b"GET / HTTP/1.1\r\nHost: www.example.com\r\n\r\n"))
+    req.headers["X-Foo"] = "Bar"
+
+    print(assemble_request(req))
+
+
 Original intro
 --------------
 
